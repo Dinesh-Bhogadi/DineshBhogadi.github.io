@@ -4,39 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinesh Bhogadi's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #about, #skills, #projects, #contact {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #about p, #skills p, #contact p {
+            text-align: center;
+        }
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        #skills ul li {
+            display: inline;
+            margin: 0 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 5px 15px;
+            border-radius: 3px;
+        }
+        .project-item {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project-item h3 {
+            margin-top: 0;
+        }
+        .project-item p {
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Dinesh Bhogadi's Portfolio</h1>
-        <p>DevOps Engineer | Cloud Enthusiast | Python Developer</p>
-    </header>
 
+<header>
+    <div class="container">
+        <h1>Dinesh Bhogadi</h1>
+        <p>DevOps Engineer | Cloud Enthusiast | Python Developer</p>
+    </div>
+</header>
+
+<div class="container">
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello! I'm Dinesh Bhogadi, a passionate DevOps Engineer with experience in cloud technologies, CI/CD pipelines, and automation. I enjoy working on projects that make development and deployment faster and more efficient.</p>
+        <p>Hello! I'm Dinesh Bhogadi, a DevOps Engineer with a strong passion for cloud technologies, automation, and efficient software deployment. With hands-on experience in building scalable CI/CD pipelines, managing cloud infrastructure, and scripting in Python, I thrive on optimizing processes and delivering high-quality solutions.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>AWS & Azure Cloud Services</li>
+            <li>CI/CD Pipelines</li>
+            <li>Infrastructure as Code (Terraform, CloudFormation)</li>
+            <li>Docker & Kubernetes</li>
+            <li>Python & JavaScript Scripting</li>
+            <li>GitHub Actions, Jenkins</li>
+            <li>Monitoring & Logging (Datadog, ELK)</li>
+        </ul>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Project 1: Cloud Infrastructure Automation</h3>
-            <p>Developed an automated infrastructure provisioning system using Terraform and AWS. The project improved deployment times by 40% and reduced manual errors.</p>
+        
+        <div class="project-item">
+            <h3>Cloud Infrastructure Automation</h3>
+            <p>Developed an automated infrastructure provisioning system using Terraform and AWS. This project reduced deployment times by 40% and minimized manual errors.</p>
         </div>
-        <div class="project">
-            <h3>Project 2: CI/CD Pipeline for Microservices</h3>
+        
+        <div class="project-item">
+            <h3>CI/CD Pipeline for Microservices</h3>
             <p>Implemented a CI/CD pipeline using Jenkins and Docker, enabling continuous integration and deployment for a microservices-based application.</p>
+        </div>
+        
+        <div class="project-item">
+            <h3>High Availability Kubernetes Cluster</h3>
+            <p>Set up a highly available Kubernetes cluster on AWS EKS, incorporating Helm charts for seamless application deployment and management.</p>
+        </div>
+        
+        <div class="project-item">
+            <h3>Python Automation Scripts</h3>
+            <p>Developed a suite of Python scripts to automate various DevOps tasks, such as log analysis, resource monitoring, and automated backups.</p>
         </div>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>Email: dineshbhogadi@example.com</p>
+        <p>Email: <a href="mailto:dineshbhogadi@example.com">dineshbhogadi@example.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/dineshbhogadi/">linkedin.com/in/dineshbhogadi</a></p>
     </section>
+</div>
 
-    <footer>
-        <p>&copy; 2024 Dinesh Bhogadi. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Dinesh Bhogadi. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
